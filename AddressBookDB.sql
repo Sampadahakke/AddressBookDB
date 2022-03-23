@@ -26,4 +26,6 @@ Select * from AddressBook
 --------------------------UC5-Delete Existing Contact----------------------------------
 Delete from AddressBook where FirstName='Sampada' And LastName='Hakke'
 Select * from AddressBook
-
+-----------------------UC6-Retrieve person by city or state-----------------------------
+Select * from AddressBook where City='Sangli' or State='Maharashtra'
+Select * from AddressBook
