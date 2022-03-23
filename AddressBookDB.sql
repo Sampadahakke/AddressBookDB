@@ -29,3 +29,7 @@ Select * from AddressBook
 -----------------------UC6-Retrieve person by city or state-----------------------------
 Select * from AddressBook where City='Sangli' or State='Maharashtra'
 Select * from AddressBook
+-------------------------------UC7-Size of addressbokk----------------------------------
+Select city, Count(City) from AddressBook where City='Sangli' Group by city;
+Select state ,Count(State) from AddressBook where State='Maharashtra' Group by state;
+
