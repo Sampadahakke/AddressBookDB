@@ -36,19 +36,12 @@ Select state ,Count(State) from AddressBook where State='Maharashtra' Group by s
 Select * from AddressBook where City='Sangli' order by FirstName;
 -------------------------------UC9-Add Type And Name--------------------------------------
 Alter Table AddressBook Add 
-BookName varchar(20),
-ContactType varchar(20);
+Type varchar(20);
+Update AddressBook set Type = 'Friends' where FirstName='Shubhada';
+Update AddressBook set Type = 'Professional' where FirstName='Venkatesh';
+Update AddressBook set Type = 'Family' where FirstName='Dhanshree';
+Alter Table AddressBook drop Column ContactType 
 
-Update AddressBook set ContactType = 'Friends' where  FirstName in ('Sue','Mike');
-Update AddressBook set ContactType = 'Professional' where firstname in ('John','Liz');
-Update AddressBook set ContactType = 'Family' where firstname in ('Meg');
-
-
-Select ContactType , Count(ContactType) from AddressBook where ContactType = 'Family' Group by ContactType;
-Select ContactType , Count(ContactType) from AddressBook where ContactType = 'Professional' Group by ContactType;
-Select ContactType , Count(ContactType) from AddressBook where ContactType = 'Family' Group by ContactType;
-
-Update AddressBook set FirstName = 'Sampada' where
 
 
 
