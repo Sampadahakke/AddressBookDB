@@ -34,7 +34,7 @@ Select city, Count(City) from AddressBook where City='Sangli' Group by city;
 Select state ,Count(State) from AddressBook where State='Maharashtra' Group by state;
 -----------------------------UC8-Sorted alphabetically----------------------------------
 Select * from AddressBook where City='Sangli' order by FirstName;
--------------------------------UC9-Add Type And Name--------------------------------------
+-------------------------------UC9-Add Type And Name-------------------------------------
 Alter Table AddressBook Add 
 Type varchar(20);
 Update AddressBook set Type = 'Friends' where FirstName='Shubhada';
